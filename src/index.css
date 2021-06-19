@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    color: rgb(83, 3, 3);
+    background-color: rgb(89, 204, 114);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin-top: 2px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    opacity: 0.92;
+    background-color: #44396b;
+    justify-content: center;
+    font-size: 24px;
+    top: 0px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    padding:4px 22px;
+    padding-top: 12px;
+}
+
+#navbar ul li a{
+    color: rgb(71, 207, 89);
+    display: block;
+    border-radius: 7px;
+    text-decoration: none
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: #62757f;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color:rgb(75 75 74);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#header_section{
+    height: 318px;
+}
+
+#header_section::before{ 
+    content: "";
+    position: absolute;
+    background: url(./images/bank3.jpg) no-repeat center center/cover;
+    height: 400px;
+    top:0px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+.home{
+    min-height: 275px;
+    text-align: center;
+    background-color: #cffae8;
+}
+
+.footer {
+    margin-top: 2px;
+    bottom: 0;
+    left:0;
+    background-color: #44396b;
+    color: white;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    bottom:0px !important;
+}
+
+.footerContent {
+
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.viewAll {
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.view {
+    text-align: center;
+    align-items: center;
+}
+
+#viewTable {
+    width:100%;
+}
+.mytable {
+    width:100%;
+}
+
+#t01 tr:nth-child(even) {
+background-color: white;
+  }
+#t01 tr:nth-child(odd) {
+   background-color:rgb(232, 232, 240);
+  }
+
+th {
+    font-weight: bolder;
+    background-color: rgb(199 193 185);
+    color: #143b02;
+    
+}
+
+.MuiButton-containedPrimary {
+    color: #0b0101 !important;
+    background-color: rgb(199 193 185) !important;
+}
+
+.MuiButton-outlinedPrimary {
+    color: #857483 !important;
+    border: 1px solid rgb(20 20 21 / 50%) !important;
+}
+
+.MuiButton-outlinedPrimary:hover {
+    border: 1px solid rgb(20 20 21 / 50%) !important;
+    background-color: rgba(63, 81, 181, 0.04) !important;
+}
+
+.MuiAlert-standardSuccess {
+    color: rgb(28 71 29) !important;
+    background-color: rgb(222 240 222) !important;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+th, td {
+    padding: 15px;
+  }
+
+.transfer {
+    margin:5px;
+}
+
+
+#btn {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#t1 {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:425px){
+    th,td {
+        padding: 5px;
+    }
+    .footerContent{
+        font-size: medium;
+    }
+    #header_section {
+        max-height: 278px;
+    }
+
+}
+
+@media only screen and (max-width:375px){
+    th, td {
+        padding: 3px;
+      }
+      .alert {
+        font-size: smaller;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+    .home-h {
+        padding: 7px 5px;
+    }
+    .MuiButton-root {
+        padding: 3px 6px !important;
+        font-size: 0.75rem !important;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+    th, td {
+        padding: 4px;
+        font-size: smaller;
+      }
+    .alert {
+        font-size: smaller;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+}
